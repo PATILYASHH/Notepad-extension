@@ -45,7 +45,7 @@ Thank you for your interest in contributing to the Enhanced Notepad Extension! W
 
    Go to the original repository on GitHub and open a pull request from your branch. Provide a clear description of the changes and any relevant information.
 
-## Add Your Name In [Contributors.md]
+## Add Your Name In [CONTRIBUTORS.MD](contributors.md)
 ## Reporting Issues
 
 If you encounter any bugs or issues, please report them by opening an issue on the GitHub repository. Include as much detail as possible to help us address the problem effectively.
