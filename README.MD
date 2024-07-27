@@ -1,7 +1,7 @@
 # Notepad Extension
 
 
-# How to Download The Extension -
+## How to Download The Extension -
 
 Click here -> [⬇️](https://github.com/PATILYASHH/Youtube-Video-Pause-Extension/archive/refs/heads/master.zip)
 
