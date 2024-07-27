@@ -1,5 +1,12 @@
 # Notepad Extension
 
+
+# How to Download The Extension -
+
+Click here -> [⬇️](https://github.com/PATILYASHH/Youtube-Video-Pause-Extension/archive/refs/heads/master.zip)
+
+
+---
 ## Description
 
 The Enhanced Notepad Extension is a Chrome extension designed for note-taking directly in your browser. It includes features such as dark/light theme toggling, drag-and-drop functionality, and fullscreen mode, making it a versatile tool for managing your notes.
