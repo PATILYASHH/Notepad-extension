@@ -69,7 +69,7 @@ To contribute to this project, follow these steps:
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](https://GitHub.com/PATILYASHH/LICENCE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/PATILYASHH/LICENES/blob/main/README.MD) file for details.
 
 ## Contact
 
