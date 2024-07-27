@@ -39,7 +39,7 @@ To install the extension:
 
 To contribute to this project, follow these steps:
 
-[How to Contribution](contribution.md)
+[How to Contribution](CONTRIBUTION.MD)
 
 ## License
 
