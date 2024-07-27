@@ -39,33 +39,7 @@ To install the extension:
 
 To contribute to this project, follow these steps:
 
-1. **Fork the Repository**: Click the "Fork" button on the top right of the repository page to create your own copy.
-
-2. **Clone Your Fork**:
-   ```bash
-   git clone https://github.com/your-username/Notepad-extension.git
-   cd Notepad-extension
-   ```
-
-3. **Create a New Branch**:
-   ```bash
-   git checkout -b feature/your-feature
-   ```
-
-4. **Make Changes**: Edit the code and test your changes.
-
-5. **Commit Changes**:
-   ```bash
-   git add .
-   git commit -m "Describe your changes"
-   ```
-
-6. **Push to Your Fork**:
-   ```bash
-   git push origin feature/your-feature
-   ```
-
-7. **Open a Pull Request**: Go to the original repository and open a pull request from your branch.
+[How to Contribution](contribution.md)
 
 ## License
 
