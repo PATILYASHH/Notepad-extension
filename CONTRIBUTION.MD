@@ -1,6 +1,6 @@
 Here is the `CONTRIBUTING.md` for your GitHub repository:
 
-```markdown
+
 # Contributing to Enhanced Notepad Extension
 
 Thank you for your interest in contributing to the Enhanced Notepad Extension! We welcome contributions from everyone. To ensure a smooth process, please follow the guidelines below.
