@@ -1,1 +1,1 @@
-// This file can be used for background tasks or left empty
+// This file can be left empty for this extension

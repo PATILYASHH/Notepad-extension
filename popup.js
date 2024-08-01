@@ -1,40 +1,38 @@
-const notes = document.getElementById('notes');
-const saveBtn = document.getElementById('save-btn');
-const themeToggle = document.getElementById('theme-toggle');
-const fullscreenBtn = document.getElementById('fullscreen-btn');
-const container = document.getElementById('container');
-
-// Load saved notes and theme
-chrome.storage.sync.get(['notes', 'theme'], (result) => {
-  if (result.notes) {
-    notes.value = result.notes;
-  }
-  if (result.theme === 'dark') {
-    document.body.classList.add('dark');
-  }
-});
-
-// Save notes
-saveBtn.addEventListener('click', () => {
-  chrome.storage.sync.set({ notes: notes.value });
-});
-
-// Toggle theme
-themeToggle.addEventListener('click', () => {
-  const isDark = document.body.classList.toggle('dark');
-  chrome.storage.sync.set({ theme: isDark ? 'dark' : 'light' });
-});
-
-// Toggle fullscreen
-fullscreenBtn.addEventListener('click', () => {
-  chrome.windows.create({
-    url: 'popup.html',
-    type: 'popup',
-    state: 'fullscreen'
+document.addEventListener('DOMContentLoaded', () => {
+    const notepad = document.getElementById('notepad');
+    const saveButton = document.getElementById('saveButton');
+    const clearButton = document.getElementById('clearButton');
+    const darkModeToggle = document.getElementById('darkModeToggle');
+  
+    // Load saved notes
+    chrome.storage.local.get(['note', 'darkMode'], (result) => {
+      if (result.note) {
+        notepad.value = result.note;
+      }
+      if (result.darkMode) {
+        document.body.classList.add('dark-mode');
+        darkModeToggle.checked = true;
+      }
+    });
+  
+    // Save note
+    saveButton.addEventListener('click', () => {
+      const note = notepad.value;
+      chrome.storage.local.set({ note: note }, () => {
+        alert('Note saved!');
+      });
+    });
+  
+    // Clear note
+    clearButton.addEventListener('click', () => {
+      notepad.value = '';
+      chrome.storage.local.remove(['note']);
+    });
+  
+    // Toggle dark mode
+    darkModeToggle.addEventListener('change', () => {
+      document.body.classList.toggle('dark-mode', darkModeToggle.checked);
+      chrome.storage.local.set({ darkMode: darkModeToggle.checked });
+    });
   });
-});
-
-// Enable drag-and-drop
-container.addEventListener('dragstart', (e) => {
-  e.dataTransfer.setData('text/plain', '');
-});
+  

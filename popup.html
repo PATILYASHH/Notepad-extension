@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="popup.css">
+  <title>Notepad</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="container" draggable="true">
-    <button id="fullscreen-btn" title="Toggle Fullscreen">🗖</button>
-    <textarea id="notes" placeholder="Write your notes here..."></textarea>
-    <button id="save-btn">Save</button>
-    <button id="theme-toggle">Toggle Theme</button>
-  </div>
+  <textarea id="notepad" placeholder="Write your notes here..."></textarea>
+  <button id="saveButton">Save</button>
+  <button id="clearButton">Clear</button>
+  <label>
+    <input type="checkbox" id="darkModeToggle"> Dark Mode
+  </label>
   <script src="popup.js"></script>
 </body>
 </html>
